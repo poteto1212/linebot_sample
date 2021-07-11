@@ -1,0 +1,13 @@
+django
+line-bot-sdk
+beautifulsoup4==4.9.3
+dj-database-url==0.5.0
+django-bootstrap4==3.0.0
+django-dbbackup==3.3.0
+psycopg2-binary==2.8.6
+python-dotenv==0.17.1
+soupsieve==2.2.1
+whitenoise==5.2.0
+pillow
+django-cloudinary-storage
+gunicorn
