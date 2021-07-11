@@ -57,10 +57,18 @@ def callback(request):
                     alt_text='template',
                     template=CarouselTemplate(columns=notes),
                 )
+                if event.message.text== "おはよう":
+                    replymessage="いい天気だね"
+                elif event.message.text=="こんにちは":
+                    replymessage="正午の鐘が鳴る"
+                
+                else:
+                    replymessage=event.message.text
+
                 line_bot_api.reply_message(
                     event.reply_token,
                    [TextSendMessage(text=event.message.text)
-                   ,TextSendMessage(text="テスト成功"),
+                   ,TextSendMessage(text=replymessage),
                    messages]
                 )
         return HttpResponse()
